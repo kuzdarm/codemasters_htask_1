@@ -1,0 +1,36 @@
+.body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+.headline {
+    font-size: 20px;
+    max-width: 50%;
+}
+.form {
+    
+}
+
+.form_basic {
+    max-width: 50%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+  }
+
+.form__agreement {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: normal;
+    font-size: 10px;
+}
+
+.form__agreement__checkbox {
+    accent-color: gray;
+}
