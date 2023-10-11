@@ -7,6 +7,7 @@
     <title>Forms</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<!--Использованы не все возможные типы инпутов-->
 <body class="body">
     <p class="headline">Хотитет записаться на наши курсы? Оставьте контакты для обратной связи!</p>
     <form class="form form_basic" >
@@ -20,6 +21,7 @@
            <textarea id="comment" name="user_comment"></textarea>  
     <div class="form__agreement">
         <input class="form__agreement__checkbox" type="checkbox" checked required>
+        <!--Некорректное значение for-->
         <label for="agreement">Соглашаюсь с политикой обработки персональных данных</label>
     </div>
         <button class="form__button" type="submit">Отправить</button>
