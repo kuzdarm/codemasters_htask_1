@@ -1,30 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<!--Использованы не все возможные типы инпутов-->
-<body class="body">
-    <p class="headline">Хотитет записаться на наши курсы? Оставьте контакты для обратной связи!</p>
-    <form class="form form_basic" >
-           <label for="name">Имя:</label>
-           <input type="text" id="name" name="user_name">  
-           <label for="mail">Email:</label>
-           <input type="email" id="mail" name="user_email" required>
-           <label for="tel">Номер телефона:</label>
-           <input type="tel" id="tel" required>
-           <label for="comment">Комментарий:</label>
-           <textarea id="comment" name="user_comment"></textarea>  
-    <div class="form__agreement">
-        <input class="form__agreement__checkbox" type="checkbox" checked required>
-        <!--Некорректное значение for-->
-        <label for="agreement">Соглашаюсь с политикой обработки персональных данных</label>
-    </div>
-        <button class="form__button" type="submit">Отправить</button>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!--Использованы не все возможные типы инпутов-->
+  <body class="body">
+    <p class="headline">
+      Хотитет записаться на наши курсы? Оставьте контакты для обратной связи!
+    </p>
+    <form class="form form_basic">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="user_name" />
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email" required />
+      <label for="tel">Номер телефона:</label>
+      <input type="tel" id="tel" required />
+      <label for="comment">Комментарий:</label>
+      <textarea id="comment" name="user_comment"></textarea>
+      <div class="form__row">
+        <input
+          class="form__agreement__checkbox"
+          id="agree"
+          type="checkbox"
+          checked
+          required
+        />
+        <label for="agree"
+          >Соглашаюсь с политикой обработки персональных данных</label
+        >
+      </div>
+      <label for="birthdate">Дата рождения</label>
+      <input type="date" id="birthdate" />
+      <input type="datetime-local" name="exactbirthdate" id="exactbirthdate" />
+      <input type="month" name="birthmonth" id="birthmonth" />
+      <input type="week" name="birthweek" id="birthweek" />
+      <label for="eyecolor">Цвет Ваших глаз</label>
+      <input type="color" id="eyecolor" />
+      <label for="passport">Прикрепите скан вашего паспорта</label>
+      <input type="file" name="passport" id="passport" />
+      <label for="cookies">Согласие на использование cookies</label>
+      <div class="form__row__option">
+        <input type="radio" name="answer" id="allcookies" />
+        <label for="allcookies">Согласен на coookies</label>
+      </div>
+      <div class="form__row__option">
+        <input type="radio" name="answer" id="nocoockies" />
+        <label for="nocoockies">Нет спасибо я не голодный</label>
+      </div>
+      <label for="password">Ваш пароль на Госуслугах</label>
+      <input type="password" id="password" />
+      <label for="luckynumber">Любимое число</label>
+      <input
+        type="number"
+        name="luckynumber"
+        id="luckynumber"
+        placeholder="69"
+      />
+      <label for="happineslvl">Укажите Ваш уровень счастья</label>
+      <input
+        type="range"
+        name="happineslvl"
+        id="happineslvl"
+        min="1"
+        max="10"
+      />
+      <label for="gsearch">Введите Ваш поисковый запрос</label>
+      <input type="search" id="gsearch" />
+      <label for="urlhh">Введите ссылку на Ваш профиль на HeadHunters</label>
+      <input type="url" id="urlhh" />
+      <input type="hidden" />
+      <input type="reset" />
+      <button class="form__button" type="submit">Отправить</button>
+      <input
+        type="image"
+        class="form__customsubmit"
+        src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaA2O_lajpJY7yoX5DiPJ0c6ITxsHeW9oHCyRnXGZn0KwfXVzArUFbLjfFfmBBImtPlSmieWvkZN8k72MUl6fSR-rt3UxA=s1600"
+        alt="image.svg"
+      />
     </form>
-</body>
+  </body>
 </html>

@@ -18,19 +18,28 @@
     display: flex;
     flex-direction: column;
     line-height: 200%;
+    row-gap: 10px;
   }
 
-.form__agreement {
+.form__row {
     display: flex;
     flex-direction: row;
-    justify-self: start;
-    align-items: center;
+    justify-content: flex-start;
+    align-items:baseline;
     padding-top: 1%;
     padding-bottom: 1%;
     line-height: normal;
-    font-size: 10px;
+}
+
+.form__row__option {
+    font-size: 14px;
 }
 
 .form__agreement__checkbox {
     accent-color: gray;
+}
+
+.form__customsubmit {
+    max-width: 200px;
+    max-height: 75px;
 }
