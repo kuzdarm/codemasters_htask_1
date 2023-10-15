@@ -21,8 +21,8 @@
       <input type="email" id="mail" name="user_email" required />
       <label for="tel">Номер телефона:</label>
       <input type="tel" id="tel" required />
-      <label for="comment">Комментарий:</label>
-      <textarea id="comment" name="user_comment"></textarea>
+      <label for="comment">Короткий комментарий:</label>
+      <input text id="comment" name="user_comment" />
       <div class="form__row">
         <input
           class="form__agreement__checkbox"
@@ -31,7 +31,7 @@
           checked
           required
         />
-        <label for="agree"
+        <label for="agree" class="form__row__option"
           >Соглашаюсь с политикой обработки персональных данных</label
         >
       </div>
@@ -79,7 +79,6 @@
       <button class="form__button" type="submit">Отправить</button>
       <input
         type="image"
-        class="form__customsubmit"
         src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaA2O_lajpJY7yoX5DiPJ0c6ITxsHeW9oHCyRnXGZn0KwfXVzArUFbLjfFfmBBImtPlSmieWvkZN8k72MUl6fSR-rt3UxA=s1600"
         alt="image.svg"
       />
